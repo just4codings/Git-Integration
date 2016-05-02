@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">GithubIntegration</string>
+    <string name="title_activity_login">Login</string>
+    <string name="et_email_hint">UserName (required)</string>
+    <string name="txt_user">UserName</string>
+    <string name="et_pwd_hint">Password (required)</string>
+    <string name="title_activity_splash_screen">splash_screen</string>
+    <string name="ed_login_user">Enter UserName</string>
+    <string name="ed_login_pass">Enter UserName</string>
+    <string name="title_activity_repos_details">Repos details</string>
+    <string name="About_tit">About</string>
+    <string name="no_issue_txt">There is no issues</string>
+    <string name="tabcommitTxt">Commits</string>
+    <string name="tabissueTxt">Issues</string>
+    <string name="tabcodeTxt">Code</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

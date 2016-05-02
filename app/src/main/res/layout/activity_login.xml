@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#87CEFA"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/curve"
+        android:hint="@string/et_email_hint"
+        android:textColorHint="@color/darkgray_hint"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+         android:paddingStart="15dp"
+        android:textColor="@color/darkgray"
+        android:inputType="textEmailAddress"
+        android:fontFamily="sans-serif-light"
+        android:nextFocusUp="@id/etusername"
+        android:nextFocusLeft="@id/etusername"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/curve"
+        android:textColor="@color/darkgray"
+        android:textColorHint="@color/darkgray_hint"
+        android:hint="@string/et_pwd_hint"
+        android:paddingStart="15dp"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        android:layout_below="@+id/etusername"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-light"
+        />
+        <Button
+            android:id="@+id/btnguest"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="16sp"
+            android:text="@string/title_activity_login"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/guest"
+            android:textColor="#FFFFFF"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/progressBarHolder"
+        android:animateLayoutChanges="true"
+        android:visibility="gone"
+        android:alpha="0.4"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:indeterminate="true"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+</RelativeLayout>

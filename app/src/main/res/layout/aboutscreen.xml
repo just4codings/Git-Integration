@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/actionBarSize"
+        android:background="@color/liteblue"
+        android:elevation="4dp"
+        android:id="@+id/toolBar"
+        android:fitsSystemWindows="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/profileImg"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtprofilename"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/darkgray"
+            android:text="Manicbasha"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="#CECECE"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                 android:id="@+id/img"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/darker_gray"
+                android:src="@mipmap/downcounter_clock"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jointxt"
+                android:text="Joined on"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:text="Dec 30,2014"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="#CECECE"/>
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/folowercount"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textColor="#006AA8"
+                    android:layout_gravity="center"
+                    android:textSize="28dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/folowers"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Followers"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/starredcount"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textColor="#006AA8"
+                    android:layout_gravity="center"
+                    android:textSize="28dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/starred"
+                    android:textColor="#000000"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Starred"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/folowingcount"
+                    android:text="1"
+                    android:textStyle="bold"
+                    android:textColor="#006AA8"
+                    android:layout_gravity="center"
+                    android:textSize="28dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/folowing"
+                    android:text="Following"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000000"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+         android:layout_marginTop="5dp"
+
+            android:background="#CECECE"/>
+
+    </LinearLayout>
+
+</LinearLayout>
